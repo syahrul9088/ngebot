@@ -88,7 +88,7 @@ const functionRegist = (username, realCookie, kelamin) => new Promise((resolve, 
         const realCookie = `${session}; ${ad}; mode=day; access=1; src=1; _ga=GA1.2.79560195.1575427248; _gid=GA1.2.1128287706.1575427248; _gat_gtag_UA_148732261_1=1; ${us}`
         const regist = await functionRegist(username, realCookie, kelamin)
         if (regist.status == 200) {
-            console.log('[+] Register berhasil!\n')
+            console.log('[+] Register berhasil!')
         } else {
             console.log(regist)
         }
