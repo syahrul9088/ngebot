@@ -95,9 +95,9 @@ const functionVeryf = (url) => new Promise((resolve, rejected) => {
 
 (async () => {
     const jumlah = readlineSync.question('[?] Jumlah reff: ')
+    const reff = readlineSync.question('[?] Kode reff: ')
     for (var i = 0; i < jumlah; i++) {
     try {
-      const reff = readlineSync.question('[?] Kode reff: ')
       const getName = await functionName()
       const angka4 = Math.floor((Math.random() * 5000) + 1000);
       const nickname = `${getName.name}${angka4}`
